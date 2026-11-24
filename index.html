@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Morpha — The Art of Becoming</title>
+  <meta name="description" content="Morpha butterfly garden — a scroll story from chrysalis to flight." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ONE continuous video behind the whole page (tools/build-story-video.sh); scroll drives its time -->
+  <div class="story-video" aria-hidden="true">
+    <video data-src="assets/video/morpha-story.mp4" poster="assets/video/morpha-story.jpg" muted playsinline preload="auto"></video>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" data-theme="dark">
+    <a href="#" class="logo">MORPHA</a>
+    <nav class="nav">
+      <a href="#" class="is-active">Home</a>
+      <a href="#wing">Collections</a>
+      <a href="#wonder">About</a>
+      <a href="#garden">Contacts</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="link-sm">Log in</a>
+      <a href="#garden" class="pill pill--outline">Sign up</a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ============ 01 · THE ART OF BECOMING ============ -->
+  <section class="sec s-hero theme-dark" data-theme="dark" id="becoming">
+    <div class="copy hero-copy">
+      <p class="eyebrow">Section One</p>
+      <h1 class="display split-lines"><span class="line"><span>The Art of</span></span><span class="line"><span>Becoming</span></span></h1>
+      <a href="#wing" class="pill pill--outline pill--light reveal-up">Read more</a>
+    </div>
+
+    <div class="dashes"><i class="on"></i><i></i><i></i></div>
+  </section>
+
+  <!-- ============ 02 · A WORLD IN EVERY WING ============ -->
+  <section class="sec s-wing theme-light" data-theme="light" id="wing">
+    <div class="copy wing-copy">
+      <p class="script-eyebrow">Chapter Two</p>
+      <h2 class="display split-lines"><span class="line"><span>A World</span></span><span class="line"><span>in Every</span></span><span class="line"><span>Wing</span></span></h2>
+      <a href="#garden" class="pill pill--gold reveal-up">Shop now</a>
+    </div>
+
+    <div class="ghost" aria-hidden="true">
+      <span class="line"><span>A World</span></span><span class="line"><span>in Every</span></span><span class="line"><span>Wing</span></span>
+    </div>
+
+    <button class="arrow-left" aria-label="Previous">&#8249;</button>
+    <div class="dashes"><i></i><i class="on"></i><i></i></div>
+  </section>
+
+  <!-- ============ 03 · FOLLOW THE WONDER ============ -->
+  <section class="sec s-wonder theme-dark" data-theme="dark" id="wonder">
+    <svg class="gold-lines" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path class="draw" d="M-40 760 C 240 560, 520 860, 760 640 S 1120 260, 1480 420" />
+      <path class="draw" d="M980 120 C 1180 160, 1300 330, 1240 520 C 1200 640, 1080 700, 960 690" />
+    </svg>
+
+    <div class="copy wonder-copy">
+      <p class="eyebrow">Chapter Three</p>
+      <h2 class="display chars">Follow the<br />Wonder</h2>
+    </div>
+
+    <div class="dots"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+  </section>
+
+  <!-- ============ 04 · ENTER THE GARDEN ============ -->
+  <section class="sec s-garden theme-light" data-theme="light" id="garden">
+    <div class="vdots"><i></i><i></i><i></i><i></i><i class="on"></i><b></b></div>
+    <svg class="garden-arc" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+      <path class="draw" d="M120 900 C 120 520, 420 300, 760 280 S 1300 380, 1360 120" />
+    </svg>
+    <span class="sparkle s1">✦</span><span class="sparkle s2">✦</span><span class="sparkle s3">✧</span>
+
+    <div class="garden-grid">
+      <div class="g-photo" aria-hidden="true"></div><!-- the card itself is part of the story video -->
+
+      <div class="g-right">
+        <h2 class="display g-title">
+          <span class="line"><span>Enter the</span></span>
+          <span class="line"><span><em class="script">Flutter</em> Garden</span></span>
+        </h2>
+
+        <div class="booking">
+          <span class="booking-badge">1</span>
+          <div class="cal-wrap">
+            <div class="cal" data-offset="0"></div>
+            <div class="cal" data-offset="1"></div>
+          </div>
+          <label class="select">
+            <select aria-label="Time slot">
+              <option>Select a time slot</option>
+              <option>09:00 — Morning flutter</option>
+              <option>11:30 — Midday bloom</option>
+              <option>14:00 — Afternoon glide</option>
+              <option>16:30 — Golden hour</option>
+            </select>
+          </label>
+          <button class="btn-book">Book your visit</button>
+          <p class="booking-note" aria-live="polite"></p>
+        </div>
+        <a href="#" class="pill pill--ghost watch">Watch more <span>›</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <span class="logo">MORPHA</span>
+    <p>Scene video: one continuous AI-generated shot, built from the Morpha reference frames and scrubbed by scroll from hero to footer.</p>
+  </footer>
+
+  <button class="chat" aria-label="Chat">
+    <svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" /></svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

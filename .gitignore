@@ -1,0 +1,15 @@
+# working material — not needed by the live site
+frames/
+video-inputs/
+Nov 24 - 10_05/
+WhatsApp Video*.mp4
+Butterfly_emerges_on_orchid_*_1080p.mp4
+
+# only the story video + poster are used by the page
+assets/*
+!assets/video/
+assets/video/*
+!assets/video/morpha-story.mp4
+!assets/video/morpha-story.jpg
+
+.DS_Store
